@@ -4,12 +4,13 @@ retorne um novo array apenas com os nomes, ordenados por preço
 crescente, usando map, sort. */
 function mapearEOrdenarPorPreco(produtos) {
     // Mapeia o array de produtos para um novo array contendo apenas os nomes
-    const nomes = produtos.map(produto => produto.nome);
+    const produtosOrdenados = [...produtos].sort((a, b) => a.preco - b.preco);
     
     // Ordena o array de produtos por preço crescente
-    produtos.sort((a, b) => a.preco - b.preco);
+    const nomesOrdenados = produtosOrdenados.map(produto => produto.nome);
     
-    return nomes;
+    return nomesOrdenados;
+    
 }
 // Exemplo de uso
 const produtos = [
