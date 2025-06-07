@@ -1,14 +1,17 @@
----
-# Lista-de-Exercicios-2-
-  Lista de tarefas 2 codifica +prati
+# Lista-de-Exercicios-2-lista de tarefas 2 +prati
+
 
 Este repositório contém uma coleção de exercícios resolvidos em JavaScript, abrangendo diversos conceitos fundamentais e padrões de programação. Cada exercício é uma função independente que demonstra uma solução específica para um problema comum, acompanhada de exemplos de uso.
 
 ---
 
-## Exercícios
+## Seções e Exercícios
 
-### 1. Validação de Datas
+### Seção 1: Estruturas de Controle Avançadas
+
+Esta seção foca em exercícios que utilizam estruturas de controle para lógica e validação.
+
+#### 1. Validação de Datas
 
 **Função:** `ehDataValida(dia, mes, ano)`
 
@@ -20,9 +23,7 @@ console.log(ehDataValida(29, 2, 2020)); // true (ano bissexto)
 console.log(ehDataValida(31, 4, 2021)); // false (abril tem 30 dias)
 ```
 
----
-
-### 2. Jogo de Adivinhação
+#### 2. Jogo de Adivinhação
 
 **Função:** `jogoDeAdivinhacao()`
 
@@ -34,9 +35,7 @@ jogoDeAdivinhacao(); // Inicia o jogo no console/navegador
 ```
 *Este jogo utiliza `prompt` para interação, sendo ideal para ambientes de navegador.*
 
----
-
-### 3. Palavras Únicas
+#### 3. Palavras Únicas
 
 **Função:** `palavrasUnicas(frase)`
 
@@ -50,7 +49,11 @@ console.log(palavrasUnicas("programação é divertida")); // Saída: ["programa
 
 ---
 
-### 4. Fatorial Recursivo
+### Seção 2: Funções e Recursão
+
+Esta seção explora conceitos de funções, incluindo recursão e padrões de otimização funcional.
+
+#### 4. Fatorial Recursivo
 
 **Função:** `fatorial(n)`
 
@@ -67,9 +70,7 @@ try {
 }
 ```
 
----
-
-### 5. Debounce
+#### 5. Debounce
 
 **Função:** `debounce(fn, delay)`
 
@@ -87,9 +88,7 @@ debouncedFunc();
 // "Função executada!" só aparece 2 segundos após a *última* chamada a debouncedFunc.
 ```
 
----
-
-### 6. Memoization
+#### 6. Memoization
 
 **Função:** `memoize(fn)`
 
@@ -105,7 +104,11 @@ console.log(fatorialMemoizado(5)); // Retorna do cache: 120 (não recalcula)
 
 ---
 
-### 7. Mapeamento e Ordenação
+### Seção 3: Arrays e Objetos Complexos
+
+Esta seção aborda a manipulação e transformação de estruturas de dados mais complexas como arrays de objetos.
+
+#### 7. Mapeamento e Ordenação
 
 **Função:** `mapearEOrdenarPorPreco(produtos)`
 
@@ -121,9 +124,7 @@ const produtos = [
 console.log(mapearEOrdenarPorPreco(produtos)); // Saída: ["Produto B", "Produto A", "Produto C"]
 ```
 
----
-
-### 8. Agrupamento por Propriedade
+#### 8. Agrupamento por Propriedade
 
 **Função:** `agruparPorCliente(vendas)`
 
@@ -139,9 +140,7 @@ const vendas = [
 console.log(agruparPorCliente(vendas)); // Saída: { João: 250, Maria: 200 }
 ```
 
----
-
-### 9. Conversão Entre Formatos
+#### 9. Conversão Entre Formatos
 
 **Funções:**
 * `paresParaObjeto(pares)`: Recebe um array de pares `[ [chave, valor], ... ]` e retorna o objeto equivalente.
